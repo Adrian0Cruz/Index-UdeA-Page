@@ -1,11 +1,560 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universidad de Antioquia</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/Normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/Modernizr.js"></script>
 </head>
-<body>
-    
+
+<body class="theme toolbar-closed">
+    <header class="custom">
+        <div class="box_logo">
+            <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/" title="Portal Universidad de Antioquia">
+                <img src="img/logosimbolo-horizontal.png" alt="Portal Universidad de Antioquia">
+            </a>
+        </div>
+        <div class="top_colm_equal">
+            <button class="mdl-button custom mdl-js-button mdl-js-ripple-effect">Estudiante</button>
+            <button class="mdl-button custom mdl-js-button mdl-js-ripple-effect">Profesor</button>
+            <button class="mdl-button custom mdl-js-button mdl-js-ripple-effect">Empleado</button>
+            <button class="mdl-button custom mdl-js-button mdl-js-ripple-effect">Egresado</button>
+            <button class="mdl-button custom mdl-js-button mdl-js-ripple-effect">Jubilado</button>
+        </div>
+        <div class="custom_colm">
+            <div class="radio-container">
+                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/emisora-cultural" target="_blank"
+                    title="Emisora UdeA">
+                    <img src="img/Emisora+UdeA_Logo-Transparente2+(1).png" alt="Emisora UdeA" width="60" height="40">
+                </a>
+                <button id="radioControl" class="radio-button" title="Escuchar en vivo">
+                    <span id="playButton" class="material-icons play-button" translate="no">play_circle_outline</span>
+                    <strong class="TextEmisora">EN VIVO</strong>
+                </button>
+            </div>
+        </div>
+    </header>
+    <nav class="menu_primary" id="stickyMenu">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#"><span>La UdeA</span></a>
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#"><span>Estudia en la UdeA</span></a>
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#"><span>Docencia</span></a>
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#"><span>Investigación</span></a>
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#"><span>Extensión</span></a>
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#"><span>Internacional</span></a>
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#"><span>Cultura</span></a>
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#"><span>Bienestar</span></a>
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#"><span>Unidades académicas</span></a>
+    </nav>
+    <main>
+        <!-- Noticias -->
+        <section class="news_section">
+            <div class="news_title">
+                <p>Noticias</p>
+            </div>
+            <div class="grid_news">
+                <div class="colm_news">
+                    <div class="box_comp">
+                        <a href="#"><img class="box_img" src="img/lsc-cine-inclusivo-doblaje.jpg"
+                                alt="Cine inclusivo"></a>
+                        <div class="copy">
+                            <a href="#">
+                                <p class="tag"><span class="material-icons">label</span> Cultura</p>
+                            </a>
+                            <a href="#">
+                                <p class="title">Con doblaje en Lengua de Señas Colombiana, la UdeA apuesta por el cine
+                                    inclusivo</p>
+                            </a>
+                            <p class="date_custom">26 sep. 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="colm_news not_tablet_news">
+                    <div class="row_news">
+                        <div class="colm">
+                            <div class="box_new">
+                                <a href="#"><img class="box_img" src="img/Externa+2.jpg" alt="La Arepa Invita"></a>
+                                <div class="copy">
+                                    <a href="#">
+                                        <p class="tag"><span class="material-icons">label</span> Cultura</p>
+                                    </a>
+                                    <a href="#">
+                                        <p class="title">La Arepa Invita: el maíz como brújula cultural en el corazón de
+                                            Medellín</p>
+                                    </a>
+                                    <p class="date_custom">25 sep. 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colm">
+                            <div class="box_new">
+                                <a href="#"><img class="box_img" src="img/BeFunky-design+(2).jpg"
+                                        alt="Museo Abierto"></a>
+                                <div class="copy">
+                                    <a href="#">
+                                        <p class="tag"><span class="material-icons">label</span> Cultura</p>
+                                    </a>
+                                    <a href="#">
+                                        <p class="title">Alianzas por el patrimonio: así se protege la colección del
+                                            Museo Abierto</p>
+                                    </a>
+                                    <p class="date_custom">24 sep. 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colm">
+                            <div class="box_new">
+                                <a href="#"><img class="box_img" src="img/Federico+Andreu+externa.jpg"
+                                        alt="Federico Andreu"></a>
+                                <div class="copy">
+                                    <a href="#">
+                                        <p class="tag"><span class="material-icons">label</span> Periódico Alma Máter
+                                        </p>
+                                    </a>
+                                    <a href="#">
+                                        <p class="title">El legado de Federico Andreu Guzmán en la defensa de los
+                                            derechos humanos</p>
+                                    </a>
+                                    <p class="date_custom">22 sep. 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paginate_custom">
+                        <button
+                            class="mdl-button login mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                            <span class="text">Lee más noticias de la U</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tarjetas de interés -->
+        <section class="cards_section">
+            <div class="row_cards">
+                <div class="colm">
+                    <a href="#">
+                        <div class="card_home" style="background-color:#069a7e;">
+                            <div class="card_body">
+                                <div class="card_tag">
+                                    <span class="material-icons">label</span>
+                                    <p>De interés</p>
+                                </div>
+                                <p>Coyuntura financiera UdeA</p>
+                            </div>
+                            <div class="card_footer">
+                                <div class="colm_footer right">
+                                    <button class="mdl-button custom mdl-js-button mdl-js-ripple-effect">
+                                        <span class="material-icons" translate="no">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="colm">
+                    <a href="#">
+                        <div class="card_home" style="background-color:#137598;">
+                            <div class="card_body">
+                                <div class="card_tag">
+                                    <span class="material-icons">label</span>
+                                    <p>Recomendado</p>
+                                </div>
+                                <p>Línea Alma te conecta con tu bienestar</p>
+                            </div>
+                            <div class="card_footer">
+                                <div class="colm_footer right">
+                                    <button class="mdl-button custom mdl-js-button mdl-js-ripple-effect">
+                                        <span class="material-icons" translate="no">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="colm">
+                    <a href="#">
+                        <div class="card_home" style="background-color:#70205b;">
+                            <div class="card_body">
+                                <div class="card_tag">
+                                    <span class="material-icons">label</span>
+                                    <p>Cultura</p>
+                                </div>
+                                <p>Hiroshima y Nagasaki</p>
+                            </div>
+                            <div class="card_footer">
+                                <div class="colm_footer right">
+                                    <button class="mdl-button custom mdl-js-button mdl-js-ripple-effect">
+                                        <span class="material-icons" translate="no">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de eventos -->
+        <section class="events_section">
+            <div class="row_events">
+                <div class="colm">
+                    <div class="copy_events">
+                        <div class="ctn_img">
+                            <a href="#"><img src="img/eventos-agenda-udea.jpg" alt="Eventos"></a>
+                        </div>
+                        <a class="mdl-button custom mdl-js-button mdl-js-ripple-effect" href="#">
+                            <p>Consulta nuestros eventos y agéndate</p>
+                            <span class="material-icons" translate="no">arrow_forward</span>
+                        </a>
+                    </div>
+                    <div class="copy_events">
+                        <div class="ctn_img">
+                            <a href="#"><img src="img/educacion-udea.jpg" alt="Educación"></a>
+                        </div>
+                        <a class="mdl-button custom mdl-js-button mdl-js-ripple-effect" href="#">
+                            <p>Educación a lo largo de la vida</p>
+                            <span class="material-icons" translate="no">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="colm">
+                    <div class="copy_elem_mdl">
+                        <div class="elem_row">
+                            <div class="elem_colm">
+                                <div class="list_sound">
+                                    <div class="section-father">
+                                        <h3 class="section-title">Pódcast</h3>
+                                    </div>
+                                    <iframe style="border-radius:12px"
+                                        src="https://open.spotify.com/embed/show/1t3xyAC9WnQGhCffrsxBoL?utm_source=generator"
+                                        width="300" height="170" frameborder="0" allowfullscreen=""
+                                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"></iframe>
+                                    <p class="text_custom">Ciencia, arte y comunicación: explorando el 10/12Lab
+                                        InnovaVoz. Temporada 3</p>
+                                    <p class="date_custom">23 sep. 2025</p>
+                                    <button
+                                        class="mdl-button login mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                        <span class="text">Más pódcast UdeA</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="elem_colm hd_view">
+                                <div class="copy_events">
+                                    <div class="ctn_img">
+                                        <div class="section-father">
+                                            <h3 class="section-title">Opinión</h3>
+                                        </div>
+                                        <div class="section-desc-father">
+                                            <img src="img/Opinión.png" alt="Opinión">
+                                            <p class="p_custom">Venezuela y América Latina frente al imperialismo global
+                                            </p>
+                                            <p class="date_custom">27 sep. 2025</p>
+                                        </div>
+                                        <button
+                                            class="mdl-button login mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                            <span class="text">Lee la columna</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de programas -->
+        <section class="programs_section">
+            <div class="row_cards">
+                <div class="stn_title">
+                    <p>Quiero estudiar en la UdeA</p>
+                </div>
+                <div class="colm">
+                    <a href="#">
+                        <div class="card_home">
+                            <div class="card_body">
+                                <p>Pregrados</p>
+                                <span class="desc">Carreras universitarias</span>
+                            </div>
+                            <div class="card_footer">
+                                <div class="colm_footer right">
+                                    <button class="mdl-button custom mdl-js-button mdl-js-ripple-effect">
+                                        <span class="material-icons" translate="no">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="border-program"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="colm">
+                    <a href="#">
+                        <div class="card_home">
+                            <div class="card_body">
+                                <p>Posgrados</p>
+                                <span class="desc">Especializaciones, maestrías y doctorados</span>
+                            </div>
+                            <div class="card_footer">
+                                <div class="colm_footer right">
+                                    <button class="mdl-button custom mdl-js-button mdl-js-ripple-effect">
+                                        <span class="material-icons" translate="no">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="border-program"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="colm">
+                    <a href="#">
+                        <div class="card_home">
+                            <div class="card_body">
+                                <p>Educación continua</p>
+                                <span class="desc">Diplomados, cursos, semilleros, seminarios, etc.</span>
+                            </div>
+                            <div class="card_footer">
+                                <div class="colm_footer right">
+                                    <button class="mdl-button custom mdl-js-button mdl-js-ripple-effect">
+                                        <span class="material-icons" translate="no">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="border-program"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="colm">
+                    <a href="#">
+                        <div class="card_home">
+                            <div class="card_body">
+                                <p>Educación Virtual</p>
+                                <span class="desc">Oferta académica Ude@</span>
+                            </div>
+                            <div class="card_footer">
+                                <div class="colm_footer right">
+                                    <button class="mdl-button custom mdl-js-button mdl-js-ripple-effect">
+                                        <span class="material-icons" translate="no">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="border-program"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="colm">
+                    <a href="#">
+                        <div class="card_home">
+                            <div class="card_body">
+                                <p>Movilidad</p>
+                                <span class="desc">Intercambios académicos nacionales e internacionales</span>
+                            </div>
+                            <div class="card_footer">
+                                <div class="colm_footer right">
+                                    <button class="mdl-button custom mdl-js-button mdl-js-ripple-effect">
+                                        <span class="material-icons" translate="no">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="border-program"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Banner de inscripciones -->
+        <section class="cards_section img_banner">
+            <div class="row_banner">
+                <a href="#">
+                    Estamos en inscripciones para posgrado. Consulta la oferta de programas.
+                    <span class="material-icons" style="vertical-align: middle;" translate="no">arrow_forward</span>
+                </a>
+            </div>
+        </section>
+        <!-- Sección de servicios -->
+        <section class="serv_section">
+            <div class="row_serv">
+                <div class="colm">
+                    <div class="card_mdl" id="verde">
+                        <div class="card_mdl_img">
+                            <a href="#"><img src="img/regiones-udea-estudiantes-oriente.jpg"
+                                    alt="UdeA en las regiones"></a>
+                        </div>
+                        <div class="card_mdl_body">
+                            <div class="copy_card_mdl">
+                                <a href="#">
+                                    <p>UdeA en las regiones</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colm">
+                    <div class="card_mdl" id="azul">
+                        <div class="card_mdl_img">
+                            <a href="#"><img src="img/Biblioteca_central_UdeA.jpg" alt="Sistema de Bibliotecas"></a>
+                        </div>
+                        <div class="card_mdl_body">
+                            <div class="copy_card_mdl">
+                                <a href="#">
+                                    <p>Sistema de Bibliotecas</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colm">
+                    <div class="card_mdl" id="verde2">
+                        <div class="card_mdl_img">
+                            <a href="#"><img src="img/pei.jpg" alt="Contratación y convocatorias"></a>
+                        </div>
+                        <div class="card_mdl_body">
+                            <div class="copy_card_mdl">
+                                <a href="#">
+                                    <p>Contratación y convocatorias</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de video -->
+        <section class="video_section">
+            <div class="box_action">
+                <div class="news_title">
+                    <p>De interés</p>
+                </div>
+                <iframe width="300" height="315" src="https://www.youtube.com/embed/uCIWxyCkTUI" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="box_action text-action">
+                <h3 class="sectionvideo">«Caballo al viento», de Manzur, ya hace parte de Museo Abierto de la UdeA</h3>
+                <p>El 4 de septiembre de 2025 el artista colombiano David Manzur le hizo entrega oficial al Museo
+                    Abierto de la UdeA de «Caballo al viento», su primera escultura.<br><br>Esta obra viajó desde los
+                    talleres del artista en Barichara, Santander, hasta la Ciudad Universitaria, Campus Medellín de la
+                    Universidad de Antioquia, gracias a la generosa donación del maestro Manzur.<br><br>Ahora este
+                    Caballo conversa, en la cotidianidad de la Ciudad Universitaria, con las demás obras que hace parte
+                    de este invaluable museo que, hasta la fecha, contiene 89 obras de 38 artistas.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="custom">
+        <div class="row_footer">
+            <div class="colm_footer mdl_custom">
+                <div class="copy_footer_ifo">
+                    <div class="ctn_logo">
+                        <a href="#"><img src="img/logo_udea_white.png" alt="Universidad de Antioquia"></a>
+                    </div>
+                    <div class="ctn_social">
+                        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#"><span
+                                class="icon-linkedin-logo"></span></a>
+                        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#"><span
+                                class="icon-facebook-logo"></span></a>
+                        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#"><span
+                                class="icon-instagram"></span></a>
+                        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#"><span
+                                class="icon-tiktok"></span></a>
+                        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#"><span
+                                class="icon-spotify"></span></a>
+                    </div>
+                    <div class="ctn_body">
+                        <p>
+                            NIT 890980040-8 | Recepción correspondencia: Cll. 70 # 52 - 21 | Apartado aéreo 1226
+                            | Dirección: Cll. 67 # 53 - 108 | Medellín - Col | Notificaciones judiciales:
+                            notifica.judiciales@udea.edu.co | Radicación PQRS: atencionciudadano@udea.co
+                        </p>
+                        <p>
+                            Línea gratuita 01 8000 416384 | Línea anticorrupción (+57-604) 219 5028
+                        </p>
+                        <p>Vigilada Mineducación. Acreditación institucional hasta el 2033 | © Copyright 2020
+                            Todos los Derechos Reservados</p>
+                    </div>
+                </div>
+            </div>
+            <div class="colm_footer">
+                <div class="list_footer">
+                    <div class="list_footer_center">
+                        <a class="mdl-button btn_footer mdl-js-button mdl-js-ripple-effect" href="#">Servicio en
+                            Línea</a>
+                        <a class="mdl-button btn_footer mdl-js-button mdl-js-ripple-effect" href="#">La UdeA nos
+                            conecta</a>
+                        <a class="mdl-button btn_footer mdl-js-button mdl-js-ripple-effect" href="#">Atención al
+                            ciudadano</a>
+                    </div>
+                </div>
+                <div class="row_int">
+                    <div class="colm_int">
+                        <div class="copy_links">
+                            <p class="title_links">Atención al ciudadano</p>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Directorio telefónico</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Mapa del sitio</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Normativa</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Pico y placa en Ciudad
+                                Universitaria</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Preguntas Frecuentes</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Tarjeta Integrada
+                                Personal</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Transparencia y Acceso a
+                                la Información</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Atención presencial</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Atención telefónica</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Atención virtual</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Notificaciones por
+                                aviso</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Políticas</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Términos y condiciones de
+                                uso</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Trámites y servicios</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Ventanilla virtual</a>
+                        </div>
+                    </div>
+                    <div class="colm_int">
+                        <div class="copy_links">
+                            <p class="title_links">Servicio en Línea</p>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Actualizar datos de
+                                egresados</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Aspirantes: docente de
+                                cátedra o contratación transitoria</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Campus UdeA</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Consultar correo
+                                electrónico</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Consultas y elecciones</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Contratación y
+                                convocatorias</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Generar certificados</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Iniciar sesión en el
+                                portal</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Obtener/Recuperar
+                                contraseña</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Pago de facturas</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Registro de usuarios
+                                externos</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Sede electrónica</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Ude@ educación virtual</a>
+                        </div>
+                    </div>
+                    <div class="colm_int">
+                        <div class="copy_links">
+                            <p class="title_links">La UdeA nos conecta</p>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Medios UdeA</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Agenda Cultural Alma
+                                Máter</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Editorial Universidad de
+                                Antioquia</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Emisora Cultural UdeA</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Periódico Alma Mater</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Revista Debates</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Revista Experimenta</a>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Revista Universidad de
+                                Antioquia</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
