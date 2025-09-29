@@ -12,6 +12,85 @@
 </head>
 
 <body class="theme toolbar-closed">
+    <div class="top_bar initialtop">
+        <div class="top_colm_equal initialequal">
+            <a href="https://www.gov.co/" title="Clic aquí para ir a la página gov.co" target="_blank" class="equalgov">
+                <img src="img/white-gov-co.png" alt="Clic aquí para ir a la página gov.co" width="100" height="24">
+            </a>
+            <div class="top_colm_equal _small _left perfilciud">
+                <button title="Participa" name="Participa"
+                    onclick="location.href='https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/participa'"
+                    class="mdl-button custom mdl-js-button mdl-js-ripple-effect">
+                    Participa
+                </button>
+                <button title="Transparencia" name="Transparencia"
+                    onclick="location.href='https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/atencion-ciudadano/transparencia-acceso-informacion'"
+                    class="mdl-button custom mdl-js-button mdl-js-ripple-effect">
+                    Transparencia
+                </button>
+                <button title="Atención al ciudadano" name="Atención al ciudadano"
+                    onclick="location.href='https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/atencion-ciudadano'"
+                    class="mdl-button custom mdl-js-button mdl-js-ripple-effect">
+                    Atención al ciudadano
+                </button>
+            </div>
+        </div>
+        <div class="top_colm_equal _small _left">
+            <div class="ctn_form_search">
+                <form id="cse-search-box" action="https://www.udea.edu.co/wps/portal/udea/web/resultado-busqueda/"
+                    name="search-form">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                        <div class="mdl-textfield__expandable-holder">
+                            <input type="hidden" name="cx" value="007898799129263925194:freixweuvom">
+                            <input type="hidden" name="ie" value="UTF-8">
+                            <input autocomplete="off" class="mdl-textfield__input" type="text" id="search-comp"
+                                name="q">
+                            <label class="mdl-textfield__label" for="search-comp">Buscar</label>
+                        </div>
+                        <label name="Buscar" class="mdl-button mdl-js-button mdl-button--icon" for="search-comp">
+                            <i class="material-icons">search</i>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <header class="flags" aria-label="Cambiar idioma">
+                <a href="#" class="flag" data-lang="en">
+                    <img src="img/en-us.jpg" alt="English" title="English" style="width: 20px;">
+                </a>
+                <a href="#" class="flag" data-lang="es">
+                    <img src="img/es-co.jpg" alt="Español" title="Español" style="width: 20px;">
+                </a>
+            </header>
+            <div id="google_translate_container"></div>
+            <button aria-label="Accesibilidad" id="menu_access"
+                class="mdl-button custom icon_ctn mdl-js-button mdl-button--icon" title="Accesibilidad"
+                name="Accesibilidad">
+                <span class="material-icons" translate="no">accessibility</span>
+            </button>
+            <div class="mdl-menu__container">
+                <div class="mdl-menu__outline mdl-menu--bottom-right"></div>
+                <ul class="mdl-menu access_mdl mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events"
+                    for="menu_access">
+                    <li class="mdl-menu__item mdl-js-ripple-effect" tabindex="-1">
+                        <p class="tlt_home">
+                            Accesibilidad
+                            <span class="material-icons" translate="no">accessibility</span>
+                        </p>
+                    </li>
+                    <li class="mdl-menu__item mdl-js-ripple-effect" tabindex="-1">
+                        <a title="Tamaño del texto" class="active__font" href="javascript:void(0)">
+                            Aumento de Texto <span class="material-icons" translate="no">format_size</span>
+                        </a>
+                    </li>
+                    <li class="mdl-menu__item mdl-js-ripple-effect" tabindex="-1">
+                        <a id="Luna" title="Modo Oscuro" class="active__dark" href="javascript:void(0)">
+                            Modo Oscuro <span class="material-icons outlined" translate="no">brightness_2</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <header class="custom">
         <div class="box_logo">
             <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/" title="Portal Universidad de Antioquia">
@@ -50,6 +129,49 @@
         <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#"><span>Unidades académicas</span></a>
     </nav>
     <main>
+        <!-- Hero Slider Principal (solo HTML y clases CSS, sin JS, solo CSS funcional) -->
+        <!-- Radios ocultos para controlar el slider -->
+        <input type="radio" name="slider" id="slider-1" class="slider-radio" checked>
+        <input type="radio" name="slider" id="slider-2" class="slider-radio">
+
+        <div class="hero_slider" id="PrincipalC">
+            <ul class="slide__home">
+                <li
+                    style="background: url('img/rotador-inscripciones-posgrados-udea-2026-1-escritorio.jpg') center center / cover no-repeat;">
+                    <div class="box_dark"></div>
+                    <div class="box_slider">
+                        <p>
+                            <a title="Inscripciones abiertas 2026-1"
+                                href="https://www.udea.edu.co/wps/portal/udea/web/inicio/estudiar-udea/quiero-estudiar-udea/posgrado"
+                                target="_self">Inscripciones abiertas 2026-1</a>
+                        </p>
+                        <a title="Inscripciones abiertas 2026-1"
+                            class="mdl-button box_link_hero mdl-js-button mdl-js-ripple-effect"
+                            href="https://www.udea.edu.co/wps/portal/udea/web/inicio/estudiar-udea/quiero-estudiar-udea/posgrado"
+                            target="_self"><span class="material-icons" translate="no">arrow_forward</span></a>
+                    </div>
+                </li>
+                <li
+                    style="background: url('img/rotador-revista-solidaridad-udea.jpg') center center / cover no-repeat;">
+                    <div class="box_dark"></div>
+                    <div class="box_slider">
+                        <p>
+                            <a title="Nuestros logros, indicadores e historias"
+                                href="https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/resultados-gestion/informe-responsabilidad-social-sostenibilidad/2024/"
+                                target="_self">Nuestros logros, indicadores e historias</a>
+                        </p>
+                        <a title="Nuestros logros, indicadores e historias"
+                            class="mdl-button box_link_hero mdl-js-button mdl-js-ripple-effect"
+                            href="https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/resultados-gestion/informe-responsabilidad-social-sostenibilidad/2024/"
+                            target="_self"><span class="material-icons" translate="no">arrow_forward</span></a>
+                    </div>
+                </li>
+            </ul>
+            <div class="slider-controls">
+                <label for="slider-1" class="slider-dot"></label>
+                <label for="slider-2" class="slider-dot"></label>
+            </div>
+        </div>
         <!-- Noticias -->
         <section class="news_section">
             <div class="news_title">
